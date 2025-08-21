@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>NEP — New Electric Planet</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* фон-градиент */
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      margin-bottom: 40px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: white;
+      font-size: 1.2rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00ffcc;
+    }
+
+    .logo {
+      width: 120px;
+      margin-bottom: 30px;
+      transition: filter 0.5s, box-shadow 0.5s;
+    }
+
+    .btn {
+      background: #00ffcc;
+      border: none;
+      padding: 15px 40px;
+      font-size: 1.2rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #00ccaa;
+    }
+
+    /* Лампа светится при наведении на кнопку */
+    .btn:hover ~ .logo {
+      filter: drop-shadow(0 0 15px #00ffcc);
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#">Каталог</a>
+    <a href="#">О компании</a>
+    <a href="#">Контакты</a>
+  </nav>
+
+  <h1>New Electric Planet</h1>
+  
+  <button class="btn">Перейти в каталог</button>
+
+  <!-- логотип-лампочка -->
+  <img src="lamp-logo.png" alt="NEP Логотип" class="logo">
+</body>
+</html>
